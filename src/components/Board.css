@@ -1,0 +1,79 @@
+/* Board.css */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 80px;
+    height: 120px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background: #f0f0f0;
+  }
+  
+  .card-back {
+    background: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  .card-number {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* Animation Timing Based on Difficulty */
+  .card-inner {
+    transition: transform 1s ease; /* Default animation time */
+  }
+  
+  .card-inner.easy {
+    transition-duration: 0s;
+  }
+  
+  .card-inner.medium {
+    transition-duration: 3s;
+  }
+  
+  .card-inner.hard {
+    transition-duration: 1s;
+  }
+  
+  .card-inner.very-hard {
+    transition-duration: 0.3s;
+  }
+  
+  .card-inner.goat-level {
+    transition-duration: 0.1s;
+  }
+  

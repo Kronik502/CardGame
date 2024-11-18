@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun memory game built using React where players match pairs of cards. The game includes a selectable difficulty level (Easy, Medium, Hard) and tracks player performance, including attempts and time taken. Once the game is completed, a **"Congratulations"** popup with a confetti animation shows the player's score.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Difficulty Levels**: Easy, Medium, and Hard
+- **Game Progress Tracking**: Displays attempts and time elapsed
+- **Congratulations Popup**: Shows when the game is completed, including a confetti animation and score display
+- **High Score Tracking**: The top scores are stored locally and displayed after each game
+- **Local Storage**: Scores are saved in the browser's local storage
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces
+- **CSS**: Styles for the game
+- **Lottie**: For confetti animation on game completion
+- **Local Storage**: To persist high scores
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Run the Project
 
-### `npm test`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Kronik502/nodequizgame.git
+Navigate to the Project Directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
 
-### `npm run build`
+cd memory-game
+Install Dependencies: Run the following command to install required packages:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
+Start the Development Server: Once dependencies are installed, run the project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
 
-### `npm run eject`
+npm start
+This will start the React development server, and you can open the app in your browser at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+How to Play
+Enter your name and select the difficulty level.
+Start the game by clicking the "Start Game" button.
+The goal is to match all the pairs of cards within the least number of attempts and time.
+Once you match all the pairs, a Congratulations popup will appear with your score.
+High scores are saved locally and displayed on the main screen.
+Game Rules
+The deck will contain pairs of cards. Each pair contains cards with the same value.
+The game ends when all pairs are matched.
+You can select a card to reveal its value, and another card to try and match it.
+If two revealed cards match, they are considered a pair and will stay revealed.
+If the cards don't match, they will be flipped back after a short delay.
+High Score System
+After completing the game, your score (based on time and attempts) is added to a local leaderboard.
+The leaderboard is stored in the browser's local storage, and the top 10 scores will be displayed.
+Dependencies
+react: ^17.0.0
+react-lottie-player: For rendering Lottie animations
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+markdown
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### **Key Sections of the README:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Project Overview**: Describes the game and its features.
+2. **Technologies Used**: Lists the tools and libraries used to build the game.
+3. **Installation Instructions**: Guides the user on how to set up and run the project locally.
+4. **How to Play**: Provides a simple guide on playing the game.
+5. **Game Rules**: Explains the rules of the game and how players can win.
+6. **High Score System**: Details the leaderboard functionality.
