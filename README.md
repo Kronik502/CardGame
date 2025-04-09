@@ -20,8 +20,8 @@ A fun memory game built using React where players match pairs of cards. The game
 ## How to Run the Project
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Kronik502/nodequizgame.git
+
+   git clone https://github.com/Kronik502/Cardgame.git
 Navigate to the Project Directory:
 
 bash
@@ -73,3 +73,8 @@ markdown
 4. **How to Play**: Provides a simple guide on playing the game.
 5. **Game Rules**: Explains the rules of the game and how players can win.
 6. **High Score System**: Details the leaderboard functionality.
+
+Screenshots:
+   ![image](https://github.com/user-attachments/assets/9f767510-b493-45d3-a00b-8a898923a7bd)
+   ![image](https://github.com/user-attachments/assets/5e708af3-215d-4a69-adb0-4f5f25bf1507)
+
